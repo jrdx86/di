@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 indice = input("Dime cuantas palabras tiene la lista: ")
 index = int(indice)a
 lista = []

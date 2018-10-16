@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import sys
 
 indice = input("Dígame cuantas palabras tiene la lista: ")
@@ -18,7 +19,7 @@ if index > 0:
 
 
 #Buscamos las palabras a eliminar, si esta no coincide con la que buscamos ira a lista_nueva
-buscar = input("Digame la palabra a sustituir : ")
+buscar = input("Digame la palabra a eliminar : ")
 
 lista_nueva = []
 
@@ -31,4 +32,4 @@ for i in lista:
 
 respuesta ="La lista es ahora: "
 #Concateno la respuesta y la lista
-print(respuesta+' '.join(lista_nueva))
+print("la lista es" + str.(lista_nueva))

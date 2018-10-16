@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import sys
 
 indice = input("Dígame cuantas palabras tiene la lista: ")
