@@ -2,26 +2,28 @@
 import sys
 
 indice = input("Dime cuantas palabras tiene la lista: ")
-index = int(indice)
-lista = []
 
-#Compruebo que el numero de palabras sea mayor a 0
-if index == 0: 
+#With the method isdigit() we can filter if is a char, a number or both
+if indice.isdigit():
+	index = int (indice)
+	if index > 0:
+		lista = []
+
+		for i in range(index):
+			nombre=input("Digame la palabra "+ str(i+1) +": ")
+			lista.append(nombre)
+		print(lista)
+
+else:
 	print("Imposible!")
 	sys.exit()
 
-if index > 0:
-	for i in range(index):
-		nombre=input("Digame la palabra "+ str(i+1) +": ")
-		lista.append(nombre)
-	
 
-	print(lista)
-
-#Pido la palabra a buscar y recorro la lista con un contador sumo las coincidencias
+#I ask for a word 
 buscar = input("Digame la palabra a buscar: ")
 contador = 0
 
+#I created a counter for count the coincidences
 for i in lista:
 	if i == buscar:
 		contador+=  1
