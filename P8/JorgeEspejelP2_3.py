@@ -10,7 +10,11 @@ if introduction.isnumeric():
  	if index > 0:
  		list = []
  		i=1
+<<<<<<< HEAD
  		
+=======
+ 		#WITH THE LOOP FIND THE PRIME NUMBERS
+>>>>>>> 5e5226b7c6dbf1afc3a4c114724d624f524715c3
  		for i in range(2,index+1):
  			if (i%2!=0 or i==2) and (i%3!=0 or i==3) and (i%5!=0 or i==5) and (i%7!=0 or i==7):
  				list.append(i)

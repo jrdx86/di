@@ -1,7 +1,7 @@
  #! /usr/bin/python3
 import sys
 
-introduction = input("Digame cuantas palabras tiene la lista")
+introduction = input("Digame cuantas palabras tiene la lista: ")
 
 if introduction.isdigit():
  	index = int (introduction)
@@ -18,3 +18,6 @@ if introduction.isdigit():
  		list.sort()
  		print("La lista ordenada es:", list)
 
+else:
+	print("Imposible!")
+	sys.exit()
