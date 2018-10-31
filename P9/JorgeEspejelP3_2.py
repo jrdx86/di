@@ -2,7 +2,7 @@
 def distancia(lista):
     laSuma = 0
     for i in range(0,len(lista)):
-        laSuma +=  tramo[i]
+        laSuma +=  lista[i]
     return print("La suma de tramos es: ",laSuma)
 
 lista = []
