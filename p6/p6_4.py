@@ -1,18 +1,27 @@
 #! /usr/bin/python3
-'''
-I create diferents strings for search in the pedido string
-and i count the matches with .count()
-'''
+
 
 def item_order(l):
+	'''
+	Busca varias coincidencias dentro de una cadena.
+	
+	Devuelve las veces que aparecen tres cadenas dentro de una cadena
+		.count()
+	Utiliza el metodo .count() para contar las coincidencias
+
+	Parámetros:
+	l -- string
+
+	imprime: str + int
+	'''
 	H="hamburguesa"
 	E="ensalada"
 	A="agua"
+	print("***********************")
+	print(H,": ", l.count(str(H)))
+	print(E,": ", l.count(str(E)))
+	print(A,": ", l.count(str(A)))
+	print("***********************")
 
-	print("Pedido realizado:")
-	print("Hamburguesa: ", l.count(str(H)))
-	print("Ensalada: ", l.count(str(E)))
-	print("Agua: ", l.count(str(A)))
-
-l=input("Pedido: ")
+l=input("Orden: ")
 item_order(l)

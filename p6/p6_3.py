@@ -1,4 +1,15 @@
+'''
+Busqueda de coincidencias dentro de un string.
 
+		.count()
+		
+	Con el metodo .count podemos buscar las coincidencias
+
+	Variables:
+	St
+	St2
+
+'''
 
 
 St = input("Introduce una frase: ")

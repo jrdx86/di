@@ -1,9 +1,53 @@
 #! /usr/bin/python3
 import sys
 
-'''
-We make a loop for make the divisions and later add the results to the lists
-for compare and add the matches for later show the biggest number
+
+def gcdIter(a,b):
+	'''
+	Máximo común divisor.
+	Nos dice cual es el máximo común divisor de dos numeros
+		a%x == 0
+		b%x == 0
+	Parámetros:
+	a -- numero entero
+	b -- número entero
+
+	'''
+	
+	if (a<b):
+		c=a
+	else:
+		c=b
+
+	for x in range(c,0,-1):
+		if a%x == 0 and b%x == 0:
+			print("mayor divisor: ", x)
+			break
+			
+	
+
+
+try:
+	a = int (input("Introduce un numero: "))
+
+except:
+	print("Ops! necesito un numero entero")
+	sys.exit()
+try:
+	b = int (input("Introduce un numero: "))
+
+except:
+	print("Ops! necesito un numero entero")
+	sys.exit()
+
+gcdIter(a,b)
+
+
+
+
+
+
+
 '''
 def gcdIter(a,b):
 	lista=[]
@@ -29,8 +73,6 @@ def gcdIter(a,b):
 				listaFinal.append(i)
 
 	print(listaFinal[:1])
-
-
 try:
 	a = int (input("Introduce un numero: "))
 
@@ -45,3 +87,4 @@ except:
 	sys.exit()
 
 gcdIter(a,b)
+'''
