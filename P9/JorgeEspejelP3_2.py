@@ -6,8 +6,8 @@ def distancia(lista):
     return print("La suma de tramos es: ",laSuma)
 
 lista = []
-
-print("Introduce tramos y cuando quieras parar introduce una letra cualquiera")
+print("")
+print("---Introduce tramos y cuando quieras parar introduce una letra cualquiera---\n")
 while(True):
 	try:
 		tramo=int(input("Introduce un tramo: "))
