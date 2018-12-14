@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module p10_universidad</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>p10_universidad</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jorlop01/di/p10/p10_universidad.py">/home/jorlop01/di/p10/p10_universidad.py</a></font></td></tr></table>
+    <p><tt>Asumo&nbsp;que&nbsp;una&nbsp;asignatura&nbsp;solo&nbsp;puede&nbsp;ser&nbsp;impartida&nbsp;por&nbsp;un&nbsp;profesor.<br>
+La&nbsp;asociación&nbsp;de&nbsp;asignaturas&nbsp;a&nbsp;alumnos&nbsp;determina&nbsp;los&nbsp;profesores&nbsp;de<br>
+cada&nbsp;alumno.<br>
+&nbsp;<br>
+En&nbsp;un&nbsp;planteamiento&nbsp;más&nbsp;ámplio&nbsp;establecería&nbsp;una&nbsp;relación&nbsp;M:M&nbsp;entre<br>
+profesores&nbsp;y&nbsp;asignaturas.&nbsp;Agregaría&nbsp;esta&nbsp;relación&nbsp;y&nbsp;establecería&nbsp;una<br>
+relacion&nbsp;M:M&nbsp;entre&nbsp;Alumnos&nbsp;y&nbsp;dicha&nbsp;agregación.&nbsp;No&nbsp;creo&nbsp;que&nbsp;sea&nbsp;un<br>
+planteamiento&nbsp;de&nbsp;esta&nbsp;complejidad&nbsp;lo&nbsp;que&nbsp;se&nbsp;persigue&nbsp;con&nbsp;el&nbsp;ejercicio<br>
+por&nbsp;lo&nbsp;que&nbsp;opto&nbsp;por&nbsp;el&nbsp;plantemiento&nbsp;inicial.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="p10_universidad.html#Asignatura">Asignatura</a>
+</font></dt><dt><font face="helvetica, arial"><a href="p10_universidad.html#Miembro">Miembro</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="p10_universidad.html#Estudiante">Estudiante</a>
+</font></dt><dt><font face="helvetica, arial"><a href="p10_universidad.html#Profesor">Profesor</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Asignatura">class <strong>Asignatura</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Asignatura-__init__"><strong>__init__</strong></a>(self, nombre, codigo)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Estudiante">class <strong>Estudiante</strong></a>(<a href="p10_universidad.html#Miembro">Miembro</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="p10_universidad.html#Estudiante">Estudiante</a></dd>
+<dd><a href="p10_universidad.html#Miembro">Miembro</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Estudiante-__init__"><strong>__init__</strong></a>(self, nombre, edad, dni, nest)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Estudiante-agrega_asignatura"><strong>agrega_asignatura</strong></a>(self, asignatura)</dt></dl>
+
+<dl><dt><a name="Estudiante-imprime_asignaturas"><strong>imprime_asignaturas</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="p10_universidad.html#Miembro">Miembro</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Miembro">class <strong>Miembro</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Miembro-__init__"><strong>__init__</strong></a>(self, nombre, edad, dni)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Profesor">class <strong>Profesor</strong></a>(<a href="p10_universidad.html#Miembro">Miembro</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="p10_universidad.html#Profesor">Profesor</a></dd>
+<dd><a href="p10_universidad.html#Miembro">Miembro</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Profesor-__init__"><strong>__init__</strong></a>(self, nombre, edad, dni, nreg)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Profesor-agrega_docencia"><strong>agrega_docencia</strong></a>(self, asignatura)</dt></dl>
+
+<dl><dt><a name="Profesor-imprime_docencia"><strong>imprime_docencia</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="p10_universidad.html#Miembro">Miembro</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>asig1</strong> = &lt;p10_universidad.Asignatura object&gt;<br>
+<strong>asig2</strong> = &lt;p10_universidad.Asignatura object&gt;<br>
+<strong>est1</strong> = &lt;p10_universidad.Estudiante object&gt;<br>
+<strong>prof1</strong> = &lt;p10_universidad.Profesor object&gt;</td></tr></table>
+</body></html>
