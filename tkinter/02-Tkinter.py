@@ -12,7 +12,7 @@ if __name__ == '__main__':
 frame = tkinter.Frame(window)
 frame.pack()
 
-button = tkinter.Button(frame, textvariable=counter, command=click)
+button = tkinter.Button(frame, textvariable=counter, command=lambda:click())
 button.pack()
 
 label = tkinter.Label(frame, textvariable=counter)
