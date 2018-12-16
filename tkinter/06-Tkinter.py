@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 import tkinter
 import tkinter.filedialog as dialog
 
